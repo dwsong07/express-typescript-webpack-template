@@ -45,7 +45,7 @@ const logger = createLogger({
 });
 
 export const stream = {
-    write(message: string) {
+    write(message: string): void {
         logger.info(message.slice(0, -1)); // "slice(0, -1)" to prevent new line
     },
 };
